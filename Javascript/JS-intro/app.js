@@ -1,3 +1,2 @@
 console.log("**************");
-console.log("merhaba fs13");
-
+console.log("*** Variables and Data Types ***");
