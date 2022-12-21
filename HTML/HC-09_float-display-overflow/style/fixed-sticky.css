@@ -3,9 +3,11 @@
   padding: 20px;
   position: fixed;
 }
+
 .sticky {
-  background-color: orangered;
-  padding: 20px;
-  top: 40px;
+  background-color: orange;
+  padding: 10px;
   position: sticky;
+  top: 0px;
+  bottom: 20px;
 }

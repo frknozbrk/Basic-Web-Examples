@@ -33,6 +33,34 @@ a {
   width: 50px;
 }
 
+.comments-container {
+  background-color: black;
+  color: white;
+  padding: 1rem;
+}
+
+.comment-left {
+  width: 60%;
+}
+
+.comment-header {
+  left: 1rem;
+}
+
+.comments {
+  margin: 1rem;
+  border-radius: 20px;
+  padding: 1rem;
+}
+
+.dark {
+  background-color: rgba(10, 57, 45);
+}
+
+.light {
+  border: 2px solid rgba(10, 57, 45);
+}
+
 label {
   color: white;
   display: block;
