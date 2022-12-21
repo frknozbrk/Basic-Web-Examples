@@ -1,0 +1,18 @@
+.box {
+  width: 7rem;
+  height: 4rem;
+  border: 1px solid black;
+}
+
+.box1 {
+  background-color: blue;
+}
+.box2 {
+  background-color: rgb(150, 24, 141);
+}
+.box3 {
+  background-color: rgb(51, 179, 147);
+}
+.box4 {
+  background-color: rgb(219, 112, 12);
+}
