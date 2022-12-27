@@ -85,3 +85,23 @@ img {
   .XY:active{
    transform: translate(-50px,40px)
   } */
+
+.btn-div {
+  text-align: center;
+}
+
+.btn {
+  background-color: rgb(8, 129, 170);
+  border: 2px solid gray;
+  padding: 20px;
+  font-size: 1.3rem;
+  border-radius: 5px;
+  transition: background-color 3s cubic-bezier(0, 1.09, 1, 0.11), color 1s;
+}
+
+.btn:hover {
+  background-color: rgb(225, 31, 13);
+  border-radius: 25px;
+  width: 200px;
+  color: white;
+}
