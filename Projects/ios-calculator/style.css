@@ -1,0 +1,84 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background-color: black;
+}
+.wrapper {
+  min-height: 100vh;
+}
+.answer {
+  color: white;
+  margin: 0;
+  padding: 1rem;
+  font-size: 4rem;
+}
+button {
+  font-size: 2rem;
+  margin: 5px;
+  border: none;
+  border-radius: 50%;
+}
+.modifiers button {
+  background-color: #ccc;
+}
+.operations button {
+  background-color: orange;
+}
+.digits button {
+  background-color: #333;
+  color: white;
+}
+
+/* All things Grid, Flexbox, Box Alignment */
+.wrapper,
+.subgrid {
+  display: grid;
+}
+.wrapper {
+  grid-template-areas:
+    "total total total total"
+    "modif modif modif oper"
+    "digit digit digit oper"
+    "digit digit digit oper"
+    "digit digit digit oper"
+    "digit digit digit oper";
+  grid-auto-columns: 1fr;
+}
+.answer {
+  grid-area: total;
+}
+.modifiers {
+  grid-area: modif;
+}
+.operations {
+  grid-area: oper;
+}
+.digits {
+  grid-area: digit;
+}
+
+.answer {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.modifiers {
+  grid-auto-flow: column;
+  grid-auto-columns: 1fr;
+}
+
+.digits {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row-reverse;
+}
+.digits button {
+  flex: 1 0 30%;
+}
+.digits .wide {
+  flex: 2 0 60%;
+  order: 1;
+  border-radius: 1000px;
+}
